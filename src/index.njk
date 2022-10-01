@@ -1,0 +1,35 @@
+{% set title = 'TEst' %}
+{% extends "layout.njk" %}
+
+{% block body %}
+<main class="">
+<div class="">
+  <div class="flex justify-center">
+    <img src="https://zazamap.com/wp-content/uploads/2022/09/9cups.jpg" alt="" class="w-20 tp-rs-img rs-lazyload" width="50" data-lazyload="//zazamap.com/wp-content/uploads/2022/09/9cups.jpg" data-no-retina="" data-reference="//zazamap.com/wp-content/uploads/2022/09/9cups.jpg" data-src-rs-ref="//zazamap.com/wp-content/uploads/2022/09/9cups.jpg" >
+  </div>
+  <h2 class="font-bold text-4xl text-center">Gypsy Poker</h2>
+  <p class="mb-4 text-center">Texas Hold 'em</p>
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/joinGame" method="POST">
+    <p class="mb-4">Enter your info below.</p>
+   
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="firstName">
+        First Name
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="firstName" id="firstName" type="text" placeholder="first name" value="{{user.firstName}}">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="lastName">
+        Last Name
+      </label>
+      <input class="hide shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="lastName" id="lastName" type="text" placeholder="last name" value="gypsy">
+    </div>
+    
+    {% include 'views/table-list.njk'%}
+  </form>
+</div>
+
+
+
+</main>
+{% endblock %}
