@@ -36,3 +36,6 @@ Running `npm run build && npx serve dist` will boot up a local server of your pr
 ### 👋🏻 Thank you!
 
 I appreciate you taking time to check out the TEA stack, Please leave a star and share it if you found it useful!
+
+run 
+`npx wrangler pages dev ./dist --kv GUsers`
