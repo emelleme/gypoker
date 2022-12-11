@@ -4,6 +4,7 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('tailwindcss-debug-screens'),
+    require("daisyui"),
   ],
   theme: {
     container: {
@@ -14,5 +15,8 @@ module.exports = {
       position: ['bottom', 'right'],
     },
     extend: {},
+  },
+  daisyui: {
+    themes: ["night", "dark", "cmyk"],
   },
 }

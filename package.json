@@ -44,6 +44,7 @@
   "dependencies": {
     "@cloudflare/pages-plugin-stytch": "^1.0.0",
     "alpinejs": "^3.1.0",
+    "daisyui": "^2.43.0",
     "stytch": "^5.12.2",
     "wrangler": "^2.1.9"
   },
